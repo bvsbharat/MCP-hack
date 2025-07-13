@@ -31,7 +31,7 @@ server_params = StdioServerParameters(
     ]
 )
 
-# Brave search server configuration
+# EXA Search server configuration
 exa_search_params = StdioServerParameters(
     command="npx",
     args=[
@@ -91,7 +91,7 @@ class WebSearchInput(BaseModel):
 
 class WebSearchTool(BaseTool):
     name: str = "web_search"
-    description: str = "Search the web using Brave Search API"
+    description: str = "Search the web using EXA Search API"
     args_schema: Type[BaseModel] = WebSearchInput
     wandb_tracker: Any = None
     
@@ -105,7 +105,7 @@ class WebSearchTool(BaseTool):
         try:
             import requests
             
-            # Use Brave Search API directly
+            # Use EXA Search API directly
             api_key = os.getenv('BRAVE_API_KEY')
             if not api_key:
                 return f"Brave API key not found. Please set BRAVE_API_KEY in your .env file."
@@ -365,7 +365,7 @@ if __name__ == "__main__":
     
     print("Server parameters configured successfully")
     print(f"Filesystem server: {server_params}")
-    print(f"Brave search server: {exa_search_params}")
+    print(f"EXA Search server: {exa_search_params}")
     print(f"Image server: {image_server_params}")
     print(f"\nInitialized {len(tools)} MCP tools with WandB tracking")
     print(f"Research Topic: {research_topic}")

@@ -35,7 +35,7 @@ MCP-Hack/
 ## ✨ Key Features
 
 ### 🔍 **AI Research Assistant (MCP-CrewLink)**
-- **Web Search**: Real-time research using Brave Search API
+- **Web Search**: Real-time research using EXA Search API
 - **Content Analysis**: Comprehensive information gathering
 - **Report Generation**: Automated markdown reports with rich formatting
 - **Visual Documentation**: AI-powered diagram generation with DALL-E 3
@@ -128,7 +128,7 @@ Create `.env` files in each component directory:
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_ORGANIZATION=your_org_id_here
 
-# Brave Search Configuration (Required)
+# EXA Search Configuration (Required)
 BRAVE_API_KEY=your_brave_api_key_here
 
 # Weights & Biases Configuration (Optional)
@@ -327,7 +327,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - 📊 [WandB Documentation](https://docs.wandb.ai/)
 - ⚡ [Next.js Documentation](https://nextjs.org/docs)
 - 🎭 [Playwright Documentation](https://playwright.dev/docs)
-- 🔍 [Brave Search API Docs](https://api.search.brave.com/app/documentation)
+- 🔍 [EXA Search API Docs](https://api.search.brave.com/app/documentation)
 
 ## 📞 Support
 

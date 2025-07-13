@@ -11,7 +11,7 @@ A powerful AI research assistant that integrates **Model Context Protocol (MCP)*
 ## ✨ Key Features
 
 ### 🔍 **Intelligent Research Capabilities**
-- **Web Search**: Real-time web research using Brave Search API
+- **Web Search**: Real-time web research using EXA Search API
 - **Content Analysis**: Comprehensive information gathering and analysis
 - **Report Generation**: Automated markdown report creation with rich formatting
 - **Visual Documentation**: AI-powered diagram and image generation
@@ -83,7 +83,7 @@ Create a `.env` file with your API keys:
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_ORGANIZATION=your_org_id_here  # Optional
 
-# Brave Search Configuration (Required)
+# EXA Search Configuration (Required)
 BRAVE_API_KEY=your_brave_api_key_here
 
 # Weights & Biases Configuration (Optional)
@@ -221,8 +221,8 @@ tracker.log_metrics({"papers_reviewed": 25})
 2. Create API key
 3. Add to `.env` file
 
-### Brave Search API
-1. Visit [Brave Search API](https://api.search.brave.com/)
+### EXA Search API
+1. Visit [EXA Search API](https://api.search.brave.com/)
 2. Sign up and generate key
 3. Add to `.env` file
 
@@ -378,7 +378,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - 🤖 [CrewAI Documentation](https://docs.crewai.com/)
 - 📊 [WandB Documentation](https://docs.wandb.ai/)
 - 🔧 [OpenAI API Reference](https://platform.openai.com/docs)
-- 🔍 [Brave Search API Docs](https://api.search.brave.com/app/documentation)
+- 🔍 [EXA Search API Docs](https://api.search.brave.com/app/documentation)
 
 ## 📞 Support
 
