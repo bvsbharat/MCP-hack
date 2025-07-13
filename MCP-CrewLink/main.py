@@ -32,13 +32,13 @@ server_params = StdioServerParameters(
 )
 
 # Brave search server configuration
-brave_search_params = StdioServerParameters(
+exa_search_params = StdioServerParameters(
     command="npx",
     args=[
-        "-y",
-        "@modelcontextprotocol/server-brave-search",
+         "-y",
+        "mcp-remote",
+        "https://mcp.exa.ai/mcp?exaApiKey=8315fda2-c304-4563-800a-53888dff7683"
     ],
-    env={"BRAVE_API_KEY": os.getenv("BRAVE_API_KEY")}
 )
 
 # Image server configuration
@@ -365,7 +365,7 @@ if __name__ == "__main__":
     
     print("Server parameters configured successfully")
     print(f"Filesystem server: {server_params}")
-    print(f"Brave search server: {brave_search_params}")
+    print(f"Brave search server: {exa_search_params}")
     print(f"Image server: {image_server_params}")
     print(f"\nInitialized {len(tools)} MCP tools with WandB tracking")
     print(f"Research Topic: {research_topic}")
